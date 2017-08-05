@@ -106,6 +106,15 @@ public class GeoTest {
         return result;
     }
 
+    @Test
+    public void test1(){
+        double my_pos_lon = 114.05;
+        double my_pos_lat = 22.540446;
+        GeoHash myGeoHash =  GeoHash.withCharacterPrecision(my_pos_lat, my_pos_lon, 5);
+        String my_pos_geocode = myGeoHash.toBase32();
+
+
+    }
 
 
 
